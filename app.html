@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sepsis Detection System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sepsis Detection System</h1>
+      <p>Early Risk Prediction (Project)</p>
+    </header>
+
+    <main class="container">
+      <form id="sepsisForm">
+        <label>Body Temperature (°C)</label>
+        <input type="number" id="temp" required />
+
+        <label>Heart Rate (bpm)</label>
+        <input type="number" id="heart" required />
+
+        <label>Systolic Blood Pressure (mmHg)</label>
+        <input type="number" id="bp" required />
+
+        <label>Respiratory Rate</label>
+        <input type="number" id="resp" required />
+
+        <button type="submit">Analyze</button>
+      </form>
+
+      <div id="resultBox">
+        <h3 id="resultText"></h3>
+        <p id="riskLevel"></p>
+      </div>
+      <div id="translator"> </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement({pagelanguage:'en'},'translator');
+        }
+    </script>
+    <script src="script.js"></script>
+    </main>
+
+    <footer>
+      <p>© 2025 Sepsis Detection Project</p>
+    </footer>
+    </div>
+  </body>
+</html>

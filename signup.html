@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up Form</title>
+    <style>
+      body {
+        background-image: url("images/3581162.jpg");
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .signup-container {
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.921);
+        width: 350px;
+      }
+      .signup-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .signup-container input[type="text"],
+      .signup-container input[type="email"],
+      .signup-container input[type="password"] {
+        width: 95%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #070000;
+        border-radius: 4px;
+      }
+      .signup-container input[type="submit"] {
+        width: 100%;
+        margin-top: 8px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgb(8, 0, 0);
+        background: #7402bb;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .signup-container input[type="submit"]:hover {
+        background: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <h2>Sign Up</h2>
+      <form action="app.html" method="get">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+        <input type="submit" value="Sign Up" />
+        <a href="login.html">Login ?</a>
+      </form>
+    </div>
+  </body>
+</html>
